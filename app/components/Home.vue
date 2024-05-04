@@ -1,26 +1,39 @@
 <template>
     <Page>
         <ActionBar>
-            <Label text="Home"/>
+            <Label :text="title"/>
         </ActionBar>
 
-        <GridLayout>
-            <Label class="info">
+        <StackLayout>
+            <!-- <Label class="info">
                 <FormattedString>
                     <Span class="fas" text.decode="&#xf135; "/>
                     <Span :text="message"/>
                 </FormattedString>
-            </Label>
-        </GridLayout>
+            </Label> -->
+            <Button text="To Details2" @tap="navigateToDetail" ></Button>
+            <Button text="Grid Layout" @tap="navigateToDetail"></Button>
+        </StackLayout>
     </Page>
 </template>
 
 <script>
+    import Details from '@/components/Details.vue'
   export default {
+    data(){
+        return {
+            title: 'Stack Layout'
+        }
+    },
     computed: {
       message() {
         return "Blank {N}-Vue app";
       }
+    },
+    methods: {
+        navigateToDetail(){
+            this.$navigateTo(Details)
+        }
     }
   };
 </script>

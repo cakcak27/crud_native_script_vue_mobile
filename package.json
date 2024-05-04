@@ -1,14 +1,17 @@
 {
-  "name": "MyProject",
+  "name": "crud_native_scrive_vue_mobile",
   "main": "app/app.js",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@nativescript/core": "~8.7.0",
+    "@nativescript/schematics": "^11.2.0",
     "@nativescript/theme": "~3.0.2",
-    "nativescript-vue": "~2.9.3"
+    "nativescript-vue": "~2.9.3",
+    "vue-router": "^3.6.5"
   },
   "devDependencies": {
+    "@nativescript/android": "8.7.0",
     "@nativescript/webpack": "~5.0.19",
     "nativescript-vue-template-compiler": "~2.9.3"
   }
